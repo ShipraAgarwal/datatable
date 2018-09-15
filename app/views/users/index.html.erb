@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Users</h1>
+
+<table id="userTable" data-source= "<%= users_path(format: :json) %>">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>NAME</th>
+      <th>EMAIL</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User', new_user_path %>
